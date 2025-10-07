@@ -20,7 +20,7 @@ Web profesional de asesoramiento sobre criptomonedas (Blockchain, Wallets, Tradi
 ├─ package.json
 // components/ServiceCard.jsx
 export default function ServiceCard({title, subtitle, icon}) {Blockguide,  Asesoría cripto clara para gente joven, paleta: (fondo: #0b1020 (negro azul) , acento 1: #00f5a0 (verde neón suave) , acento 2: #7c3aed (violeta) , textos: blancos y grises (#e6eef8, #9aa4b2) , tipografía:Inter (principal) , JetBrains Mono para code snippets , iconografía: lucide/react o heroicons — simple y lineal , estética: minimal, cards con blur y sutiles gradientes, microinteracciones (hover, scale))}
-
+return (
     <div className="bg-gradient-to-br from-white/3 to-white/2 backdrop-blur-md border border-white/6 rounded-2xl p-6 shadow-lg hover:scale-101 transition-transform">
       <div className="w-14 h-14 rounded-xl flex items-center justify-center mb-4 bg-white/6">
         {icon}
@@ -31,7 +31,7 @@ export default function ServiceCard({title, subtitle, icon}) {Blockguide,  Aseso
         Saber más
       </button>
     </div>
-  
+    
 // pages/index.jsx  (o app/page.jsx)
 import ServiceCard from '../components/ServiceCard'
 import { FaDiceD6, FaWallet, FaExchangeAlt, FaFileInvoiceDollar } from 'react-icons/fa'
